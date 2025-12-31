@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pureTabs - User Guide & Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .content-card { @apply bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-8 transition-all hover:shadow-md; }
+        .method-label { @apply text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2 py-0.5 rounded mr-2; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-[#fafafa] text-slate-800 font-sans antialiased">
+
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tighter">pure<span class="text-blue-600">Tabs</span></span>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#privacy" class="hover:text-blue-600">Privacy</a>
+                <a href="#guide" class="hover:text-blue-600">User Guide</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl md:text-6xl font-black mb-6 text-slate-900 tracking-tight">pureTabs</h1>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            A minimalist new tab extension that prioritizes your privacy and data sovereignty.
+        </p>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+
+        <section id="privacy" class="mb-20">
+            <div class="flex items-center gap-3 mb-10">
+                <span class="text-3xl text-blue-600"><i class="fas fa-shield-alt"></i></span>
+                <h2 class="text-3xl font-bold tracking-tight">Privacy Policy</h2>
+            </div>
+            
+            <div class="bg-slate-900 text-white p-10 rounded-3xl mb-10 shadow-xl shadow-blue-900/10">
+                <p class="text-2xl font-light italic text-slate-300">"We hate privacy abuse as much as you do."</p>
+            </div>
+
+            <div class="grid gap-6">
+                <div class="content-card border-l-4 border-l-emerald-500">
+                    <h3 class="font-bold text-xl mb-3">Zero Data Collection</h3>
+                    <p class="text-slate-600">This extension contains no tracking scripts, no analytics, and no advertising code.</p>
+                </div>
+                <div class="content-card border-l-4 border-l-blue-500">
+                    <h3 class="font-bold text-xl mb-3">Transparent Permissions</h3>
+                    <p class="text-slate-600">We only request the minimum permissions required for basic functionality (e.g., storage to save your icon layouts). We promise: past, present, and future, we will never integrate any third-party tracking scripts.</p>
+                </div>
+                <div class="content-card border-l-4 border-l-indigo-500">
+                    <h3 class="font-bold text-xl mb-3">Data Sovereignty</h3>
+                    <p class="text-slate-600 leading-relaxed">All your data (icons, layouts, settings) exists only in two places: your local browser and your own Cloudflare D1 database. The developer has no access to your data; we don’t even know who is using the extension.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200 mb-20">
+
+        <section id="guide">
+            <div class="flex items-center gap-3 mb-10">
+                <span class="text-3xl text-blue-600"><i class="fas fa-book-open"></i></span>
+                <h2 class="text-3xl font-bold tracking-tight">User Guide</h2>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="bg-slate-100 w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
+                    Icons & Layout
+                </h3>
+                <ul class="space-y-6 text-slate-600">
+                    <li>
+                        <strong class="text-slate-900 block mb-1">Add Icons</strong>
+                        Click the Gear icon in the top-left (or top-right) corner to enter the Control Center. In the "Add" tab, you can create new icons with Auto-fetch or Custom design.
+                    </li>
+                    <li>
+                        <strong class="text-slate-900 block mb-1">Edit Icons</strong>
+                        Right-click any existing icon on the home screen and select "Edit" to modify its name, link, or logo.
+                    </li>
+                    <li>
+                        <strong class="text-slate-900 block mb-1">Layout & Background</strong>
+                        In the Control Center, you can precisely customize icon size, spacing, and grid layout. Supports uploading local wallpapers as your background.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="bg-slate-100 w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
+                    Advanced Folder Operations
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-sm text-slate-400 uppercase tracking-widest">Add to Folder</h4>
+                        <p class="text-sm"><span class="method-label">Method A</span> Simply drag and drop an icon onto a folder icon.</p>
+                        <p class="text-sm"><span class="method-label">Method B</span> Open a folder and click the "+" button inside to add icons.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-sm text-slate-400 uppercase tracking-widest">Remove from Folder</h4>
+                        <p class="text-sm"><span class="method-label">Method A</span> Open the folder and drag an icon out of the folder popup area.</p>
+                        <p class="text-sm"><span class="method-label">Method B</span> Right-click an icon inside the folder and select "Move out".</p>
+                    </div>
+                </div>
+                <div class="pt-6 border-t border-gray-50">
+                    <p class="text-slate-600 mb-4"><strong>Dismiss Folder:</strong> Right-click a folder icon and select "Dismiss," or it will automatically dissolve when the last icon is moved out.</p>
+                    <blockquote class="bg-amber-50 border-l-4 border-amber-400 p-4 text-sm text-amber-900">
+                        <strong>Note:</strong> When a folder is dismissed, the icons inside will return to the home screen and will not be deleted.
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="content-card bg-gradient-to-br from-white to-blue-50/30">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="bg-slate-100 w-8 h-8 rounded-full flex items-center justify-center text-sm">3</span>
+                    Sync & Backup
+                </h3>
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="font-bold text-blue-600 mb-2">Private Cloud Sync</h4>
+                        <p class="text-slate-600">Supports cross-device synchronization via your own Cloudflare Worker + D1 database. For detailed instructions, please refer to the "Cloudflare D1 Setup Guide" inside the settings page.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2 text-sm uppercase tracking-widest">Manual Backup</h4>
+                        <div class="flex gap-4">
+                            <span class="text-sm bg-white border border-gray-200 px-3 py-1 rounded shadow-sm">Export (.json)</span>
+                            <span class="text-sm bg-white border border-gray-200 px-3 py-1 rounded shadow-sm">Import</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-16 text-center">
+        <div class="flex justify-center gap-8 mb-6 text-xl text-slate-300">
+            <a href="#" class="hover:text-slate-900 transition"><i class="fab fa-github"></i></a>
+            <a href="#" class="hover:text-amber-500 transition"><i class="fas fa-coffee"></i></a>
+        </div>
+        <p class="text-slate-400 text-sm">© 2025 pureTabs. Built for privacy seekers.</p>
+    </footer>
+
+</body>
+</html>
